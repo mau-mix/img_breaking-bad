@@ -9,7 +9,7 @@ const FrasesProvider = ( props ) => {
 
     const consultarApi = async () => {
         
-        const Api = "https://breaking-bad-quotes.herokuapp.com/v1/quotes"
+        const Api = "https://api.breakingbadquotes.xyz/v1/quotes"
         const frase = await axios.get( Api )
         setFrase( frase.data[0] )
     }
